@@ -11,3 +11,5 @@ iron:router
 less
 email
 nemo64:bootstrap
+fortawesome:fontawesome
+joshdellay:jquery-mobile-menu
