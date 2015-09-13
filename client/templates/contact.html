@@ -1,48 +1,41 @@
 <template name="contact">
- <!--  <div class="contact-header">
-    <h1>Contact Us</h1>
-  </div> -->
-
   <div class="content">
-    <h1>Contact Us</h1>
+    <div class="contact-content">
+      <h1>Contact Us</h1>
 
-    <div class="callback-form row">
-      <div class="col-xs-12">
-        <h3>Request a callback from us...</h3>
-        <form>
-          <div class="form-group">
-            <label>Name *</label>
-            <input class="form-control" id="name" type="text">
-          </div>
-          <div class="form-group">
-            <label>Phone Number *</label>
-            <input class="form-control" id="phonenumber" type="text">
-          </div>
-          <button href="#" type="submit" class="btn phonecall-request-button">Send</button>
-          <small>* required</small>
-        </form>
+      <h2>If you would like to contact us about any of the services we offer you can use one of the forms below.</h2>
+
+        <h3>Request a callback.</h3>
+      <div class="callback-form row">
+
+        <div class="col-xs-12">
+          {{#autoForm schema=callbackFormSchema id="callbackForm" type="method" meteormethod="sendCallbackRequest"}}
+            <fieldset>
+              {{> afQuickField name="name"}}
+              {{> afQuickField name="phonenumber"}}
+              <div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </fieldset>
+          {{/autoForm}}
+        </div>
       </div>
-    </div>
 
-    <div class="email-form row">
-      <div class="col-xs-12">
-        <h3>Or send us a message directly.</h3>
-        <form>
-          <div class="form-group">
-            <label>Name *</label>
-            <input class="form-control" id="name" type="text">
-          </div>
-          <div class="form-group">
-            <label>E-mail *</label>
-            <input class="form-control" id="from" type="email">
-          </div>
-          <div class="form-group">
-            <label>Message *</label>
-            <textarea class="form-control" id="text" rows="4"></textarea>
-          </div>
-          <button href="#" type="submit" class="btn message-button">Send</button>
-          <small>* required</small>
-        </form>
+        <h3>Send us a message.</h3>
+      <div class="email-form row">
+
+        <div class="col-xs-12">
+          {{#autoForm schema=messageFormSchema id="messageForm" type="method" meteormethod="sendMessage"}}
+            <fieldset>
+              {{> afQuickField name="name"}}
+              {{> afQuickField name="email"}}
+              {{> afQuickField name="message" rows=6}}
+              <div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </fieldset>
+          {{/autoForm}}
+        </div>
       </div>
     </div>
   </div>

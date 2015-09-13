@@ -52,28 +52,6 @@ header {
   }
 }
 
-.contact-header {
-  background-image: url('contact_header.jpg');
-  background-size: 110%;
-  background-position: 43% 74%;
-  padding-top: 115px;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  color: #fff;
-
-  h1 {
-    position: absolute;
-    top: 22px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: 400;
-  }
-}
-
 .content {
   width: 90%;
   margin-left: 5%;
@@ -83,6 +61,17 @@ header {
     font-size: 1.8em;
     text-decoration: underline;
     line-height: 1.8em;
+  }
+
+  h2 {
+    margin: 0 0 30px 0;
+    font-size: 1.4em;
+  }
+
+  h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.3em;
+    font-weight: bold;
   }
 }
 
@@ -95,6 +84,10 @@ header {
 }
 
 .coach-content {
+  .coach:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
   img {
     float: left;
     width: 100px;
@@ -102,8 +95,19 @@ header {
   }
 }
 
+.timetable-content {
+  h2 {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+}
+
 .callback-form {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 form {
@@ -147,28 +151,5 @@ button {
   padding: 0;
   &:focus {
     outline:0;
-  }
-}
-
-#my-menu:not( .mm-menu) {
-    display: none;
-    font-size: 20px;
-}
-
-.mm-menu.mm-light {
-  text-align: left;
-  background: #EBE8DE;
-  color: #000;
-
-  ul {
-    font-size: 18px;
-
-    li {
-      padding-top: 20px;
-    }
-    i {
-      padding-right: 10px;
-      padding-left: 10px;
-    }
   }
 }
