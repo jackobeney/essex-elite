@@ -65,6 +65,57 @@ header {
   }
 }
 
+.contact-header {
+  background-image: url('contact_header.jpg');
+  background-size: 128%;
+  background-position: 25% 58%;
+  padding-top: 150px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  color: #fff;
+
+  h1 {
+    top: 40px;
+    font-size: 2.5em;
+  }
+}
+
+.timetable-header {
+  background-image: url('timetable_header.jpg');
+  background-size: 128%;
+  background-position: 65% 40%;
+  padding-top: 150px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  color: #fff;
+
+  h1 {
+    top: 40px;
+    font-size: 2.5em;
+  }
+}
+
+.coaching-header {
+  background-image: url('coaching_header.jpg');
+  background-size: 128%;
+  background-position: 65% 35%;
+  padding-top: 150px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  color: #fff;
+
+  h1 {
+    top: 40px;
+    font-size: 2.5em;
+  }
+}
+
 .content {
   width: 90%;
   margin-left: 5%;
@@ -77,7 +128,7 @@ header {
   }
 
   h2 {
-    margin: 0 0 30px 0;
+    margin: 20px 0 30px 0;
     font-size: 1.4em;
   }
 
@@ -120,8 +171,19 @@ header {
       font-size: 1.2em;
     }
 
+    button {
+      font-size: 14px;
+      width: auto;
+    }
+
+    p {
+      margin: 0;
+      padding: 10px 0 15px 0;
+      color: #1E5B95;
+    }
+
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -208,4 +270,349 @@ button {
   }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px)  {
+  header {
+    img {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      left: 44%;
+    }
+  }
 
+  .about-header {
+    padding-top: 300px;
+    background-size: 110%;
+    background-position: 57% 57%;
+
+    h1 {
+      font-size: 3.5em;
+    }
+
+    h3 {
+      font-size: 2em;
+      top: 110px;
+    }
+  }
+
+  .contact-header {
+    background-image: url('contact_header.jpg');
+    background-size: 128%;
+    background-position: 25% 58%;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 50px;
+      font-size: 3.5em;
+    }
+  }
+
+  .timetable-header {
+    background-image: url('timetable_header.jpg');
+    background-size: 128%;
+    background-position: 65% 40%;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 50px;
+      font-size: 3.5em;
+    }
+  }
+
+  .coaching-header {
+    background-image: url('coaching_header.jpg');
+    background-size: 128%;
+    background-position: 65% 40%;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 50px;
+      font-size: 3.5em;
+    }
+  }
+
+  .content {
+    h2 {
+      margin-top: 20px;
+    }
+  }
+
+  .about-content {
+    text-align: justify;
+
+    p {
+      font-size: 1.4em;
+    }
+  }
+
+  .coach-content {
+    .coach:not(:last-child) {
+      padding-bottom: 35px;
+    }
+
+    img {
+      float: right;
+      width: 160px;
+      height: auto;
+    }
+
+    p {
+      text-align: justify;
+      margin-top: 20px;
+      font-size: 1.4em;
+    }
+  }
+
+  .footer {
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  header {
+    button {
+      margin-left: 20%;
+    }
+
+    img {
+      position: absolute;
+      width: 120px;
+      height: auto;
+      left: 45%;
+    }
+  }
+
+  .about-header {
+    background-size: 100%;
+    background-position: 2% 60%;
+    padding-top: 500px;
+
+    h1 {
+      font-size: 3.5em;
+      top: 145px;
+    }
+
+    h3 {
+      font-size: 2em;
+      top: 200px;
+    }
+  }
+
+  .contact-header {
+    background-image: url('contact_header.jpg');
+    background-size: 105%;
+    background-position: 5% 60%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 65px;
+      font-size: 3.5em;
+    }
+  }
+
+  .timetable-header {
+    background-image: url('timetable_header.jpg');
+    background-size: 128%;
+    background-position: 65% 42%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 65px;
+      font-size: 3.5em;
+    }
+  }
+
+  .coaching-header {
+    background-image: url('coaching_header.jpg');
+    background-size: 128%;
+    background-position: 65% 36%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 65px;
+      font-size: 3.5em;
+    }
+  }
+
+  .content {
+    h2 {
+      margin-top: 20px;
+    }
+  }
+
+  .about-content {
+    text-align: justify;
+
+    p {
+      font-size: 1.4em;
+    }
+  }
+
+  .coach-content {
+    img {
+      float: right;
+      width: 180px;
+      height: auto;
+    }
+
+    p {
+      text-align: justify;
+      padding-top: 40px;
+      font-size: 1.4em;
+    }
+  }
+
+  .footer {
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  header {
+    button {
+      margin-left: 20%;
+    }
+
+    img {
+      position: absolute;
+      width: 120px;
+      height: auto;
+      left: 47%;
+    }
+  }
+
+  .about-header {
+    background-size: 100%;
+    background-position: 2% 60%;
+    padding-top: 500px;
+
+    h1 {
+      font-size: 3.5em;
+      top: 145px;
+    }
+
+    h3 {
+      font-size: 2em;
+      top: 200px;
+    }
+  }
+
+  .contact-header {
+    background-image: url('contact_header.jpg');
+    background-size: 105%;
+    background-position: 5% 60%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 65px;
+      font-size: 3.5em;
+    }
+  }
+
+  .timetable-header {
+    background-image: url('timetable_header.jpg');
+    background-size: 128%;
+    background-position: 65% 42%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 65px;
+      font-size: 3.5em;
+    }
+  }
+
+  .coaching-header {
+    background-image: url('coaching_header.jpg');
+    background-size: 128%;
+    background-position: 65% 36%;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    color: #fff;
+
+    h1 {
+      top: 65px;
+      font-size: 3.5em;
+    }
+  }
+
+  .content {
+    h2 {
+      margin-top: 20px;
+    }
+  }
+
+  .about-content {
+    text-align: justify;
+
+    p {
+      font-size: 1.4em;
+    }
+  }
+
+  .coach-content {
+    img {
+      float: right;
+      width: 200px;
+      height: auto;
+    }
+
+    p {
+      text-align: justify;
+      padding-top: 50px;
+      font-size: 1.4em;
+    }
+  }
+
+  .footer {
+    a {
+      font-size: 20px;
+    }
+  }
+}

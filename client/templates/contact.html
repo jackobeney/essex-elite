@@ -1,46 +1,48 @@
 <template name="contact">
- <div class="header contact-header hidden-xs">
+ <div class="header contact-header">
     <h1>Contact us</h1>
   </div>
 
   <div class="content">
-    <div class="contact-content">
-      <h1 class="visible-xs">Contact Us</h1>
+    <div class="contact-content row">
 
-      <h2>If you would like to contact us about any of the services we offer you can use one of the forms below.</h2>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+        <h2>If you would like to contact us about any of the services we offer you can use one of the forms below.</h2>
 
         <h3>Request a callback.</h3>
-      <div class="callback-form row">
+        <div class="callback-form row">
 
-        <div class="col-xs-12">
-          {{#autoForm schema=callbackFormSchema id="callbackForm" type="method" meteormethod="sendCallbackRequest"}}
-            <fieldset>
-              {{> afQuickField name="name"}}
-              {{> afQuickField name="phonenumber"}}
-              <div>
-                <button type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </fieldset>
-          {{/autoForm}}
+          <div class="col-xs-12">
+            {{#autoForm schema=callbackFormSchema id="callbackForm" type="method" meteormethod="sendCallbackRequest"}}
+              <fieldset>
+                {{> afQuickField name="name"}}
+                {{> afQuickField name="phonenumber"}}
+                <div>
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </fieldset>
+            {{/autoForm}}
+          </div>
         </div>
-      </div>
 
         <h3>Send us a message.</h3>
-      <div class="email-form row">
+        <div class="email-form row">
 
-        <div class="col-xs-12">
-          {{#autoForm schema=messageFormSchema id="messageForm" type="method" meteormethod="sendMessage"}}
-            <fieldset>
-              {{> afQuickField name="name"}}
-              {{> afQuickField name="email"}}
-              {{> afQuickField name="message" rows=6}}
-              <div>
-                <button type="submit" class="btn btn-primary">Send</button>
-              </div>
-            </fieldset>
-          {{/autoForm}}
+          <div class="col-xs-12">
+            {{#autoForm schema=messageFormSchema id="messageForm" type="method" meteormethod="sendMessage"}}
+              <fieldset>
+                {{> afQuickField name="name"}}
+                {{> afQuickField name="email"}}
+                {{> afQuickField name="message" rows=6}}
+                <div>
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </fieldset>
+            {{/autoForm}}
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 

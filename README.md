@@ -1,6 +1,5 @@
 ## Essex Elite
 
 #### To Do
-* Field validation for contact forms
-* Timetable page
-* What we offer page
+* Contact modal for selecting session.
+* Add info and photos for Meet the Coaches section.
