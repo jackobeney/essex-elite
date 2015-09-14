@@ -49,6 +49,6 @@
     "transition"           : false,
 
     "utilities"            : false,
-    "responsive-utilities" : false
+    "responsive-utilities" : true
   }
 }

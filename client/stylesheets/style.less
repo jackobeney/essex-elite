@@ -28,6 +28,16 @@ header {
   }
 }
 
+.header {
+  h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
 .about-header {
   background-image: url('about_header.jpg');
   background-size: 150%;
@@ -40,13 +50,8 @@ header {
   color: #fff;
 
   h1 {
-    position: absolute;
     top: 60px;
-    left: 0;
-    right: 0;
-    text-align: center;
     font-size: 2em;
-    font-weight: 400;
   }
 
   h3 {
@@ -104,7 +109,6 @@ header {
 }
 
 .timetable-content {
-
   .day {
     h2 {
       margin: 0 0 10px 0;
@@ -114,6 +118,37 @@ header {
     h3 {
       font-style: italic;
       font-size: 1.2em;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.coaching-content {
+  .option {
+    h2 {
+      margin: 0 0 10px 0;
+      font-weight: bold;
+    }
+
+    h3:not(.additonal-sports) {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    .additonal-sports {
+      font-weight: 400;
+    }
+
+    ul {
+      font-size: 1.1em;
+      padding-left: 18px;
+    }
+
+    li {
+      padding-bottom: 5px;
     }
 
     &:not(:last-child) {
@@ -173,42 +208,4 @@ button {
   }
 }
 
-@media only screen and (min-device-width: 750px) and (max-device-width: 1024px)  {
-  header {
-    img {
-      position: absolute;
-      width: 100px;
-      height: auto;
-      left: 44%;
-    }
-  }
 
-  .about-header {
-    background-size: 100%;
-    background-position: 2% 65%;
-    padding-top: 300px;
-  }
-
-  .about-content {
-    text-align: justify;
-  }
-
-  .coach-content {
-    img {
-      float: right;
-      width: 160px;
-      height: auto;
-    }
-
-    p {
-      text-align: justify;
-      padding-top: 45px;
-    }
-  }
-
-  .footer {
-    a {
-      font-size: 20px;
-    }
-  }
-}
