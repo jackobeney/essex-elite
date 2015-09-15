@@ -10,7 +10,7 @@ Meteor.methods({
     this.unblock();
 
     Email.send({
-        to: "jackobeney@googlemail.com",
+        to: "essexelitefootball@gmail.com",
         from: "no-reply@essexelite.co.uk",
         subject: "Callback request",
         text: doc.name + " has requested a callback on the number " + doc.phonenumber
@@ -24,10 +24,19 @@ Meteor.methods({
     this.unblock();
 
     Email.send({
-        to: "jackobeney@googlemail.com",
+        to: "essexelitefootball@gmail.com",
         from: doc.email,
         subject: "Essex Elite message from " + doc.name,
         text: doc.message
+    });
+  },
+
+  sendSessionEnquiry: function(name, from, session) {
+    Email.send({
+        to: "essexelitefootball@gmail.com",
+        from: from,
+        subject: "Training session enquirey",
+        text: name + " has enquired about session: " + session
     });
   }
 });
