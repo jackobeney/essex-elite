@@ -2,6 +2,10 @@ Router.route('/', function () {
   this.render('about');
 });
 
+Router.route('/team', function () {
+  this.render('team');
+});
+
 Router.route('/timetable', function () {
   this.render('timetable');
 });
