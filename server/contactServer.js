@@ -1,5 +1,5 @@
 Meteor.startup(function () {
-  process.env.MAIL_URL = 'smtp://app41290399@heroku.com:5s3pzdnn0689@smtp.sendgrid.net:587';
+  process.env.MAIL_URL = //SMTP Server;
 });
 
 Meteor.methods({
